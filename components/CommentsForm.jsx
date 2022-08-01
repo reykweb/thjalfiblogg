@@ -76,7 +76,7 @@ const CommentsForm = ({ slug }) => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Skyldu eftir skilaboð</h3>
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Skildu eftir skilaboð</h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea value={formData.comment} onChange={onInputChange} className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" name="comment" placeholder="Athugasemd" />
       </div>
@@ -87,7 +87,7 @@ const CommentsForm = ({ slug }) => {
       <div className="grid grid-cols-1 gap-4 mb-4">
         <div>
           <input checked={formData.storeData} onChange={onInputChange} type="checkbox" id="storeData" name="storeData" value="true" />
-          <label className="text-gray-500 cursor-pointer" htmlFor="storeData"> Vista nafn og tölvupóst í þessum vafra fyrir næstu athugasemd.</label>
+          <label className="text-gray-500 cursor-pointer" htmlFor="storeData"> Vista nafn og tölvupóst fyrir næstu athugasemd.</label>
         </div>
       </div>
       {error && <p className="text-xs text-red-500">Fylla þarf út í alla reiti</p>}
