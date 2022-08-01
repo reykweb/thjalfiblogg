@@ -27,7 +27,7 @@ const Comments = ({ slug }) => {
                 <p className="mb-4">
                   <span className="font-semibold">{comment.name}</span>
                   {' '}
-                  on
+                  þann
                   {' '}
                   {moment(comment.createdAt).format('DD MMM, YYYY')}
                 </p>
