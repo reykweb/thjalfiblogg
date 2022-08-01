@@ -17,7 +17,7 @@ const Header = () => {
       <div className="border-b w-full inline-block border-blue-400 py-8">
 
         <div className="md:float-left block md:contents ">
-          <img src="./logo.jpg" alt="" className="object-left absolute h-30 w-20   shadow-lg rounded-t-lg lg:rounded-lg z-10 " />
+          {/* <img src="./logo.jpg" alt="" className="object-left absolute h-30 w-20   shadow-lg rounded-t-lg lg:rounded-lg z-10 " /> */}
           {/* <span className="block md:float-center cursor-pointer font-bold text-4xl text-white ml-20 mt-10">Hestamannafélagið Þjálfi</span> */}
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl text-white ml-20 mt-10">Hestamannafélagið Þjálfi</span>
