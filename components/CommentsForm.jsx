@@ -87,13 +87,13 @@ const CommentsForm = ({ slug }) => {
       <div className="grid grid-cols-1 gap-4 mb-4">
         <div>
           <input checked={formData.storeData} onChange={onInputChange} type="checkbox" id="storeData" name="storeData" value="true" />
-          <label className="text-gray-500 cursor-pointer" htmlFor="storeData"> Vista nafn og tölvupóst fyrir næstu athugasemd.</label>
+          <label className="text-gray-500 cursor-pointer" htmlFor="storeData"> Geyma nafn og tölvupóst fyrir næstu athugasemd.</label>
         </div>
       </div>
       {error && <p className="text-xs text-red-500">Fylla þarf út í alla reiti</p>}
       <div className="mt-8">
         <button type="button" onClick={handlePostSubmission} className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Pósta  Athugasemd</button>
-        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Athugasemd send til skoðunar</span>}
+        {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Athugasemd send inn</span>}
       </div>
     </div>
   );
