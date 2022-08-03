@@ -13,8 +13,8 @@ const Footer = () => (
         src="../logo.jpg"
       />
     </div>
-    <h3 className="text-white mt-4 mb-4 text-4xl font-bold">Hestamannafélagið Þjálfi 2022</h3>
-    <p className="text-white text-xs">&copy; Reykweb</p>
+    <h3 className="text-white mt-4 mb-4 text-4xl font-bold">Þjálfi</h3>
+    <p className="text-white text-xs">&copy; Reykweb 2022</p>
   </div>
 );
 
