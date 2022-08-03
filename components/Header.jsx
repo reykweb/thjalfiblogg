@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-
 import Link from 'next/link';
 import { getCategories } from '../services';
 
@@ -27,8 +25,6 @@ const Header = () => {
             className="align-middle rounded-full"
             src="../logo.jpg"
           />
-          {/* <img src="./logo.jpg" alt="" className="object-left absolute h-20 w-20   shadow-lg rounded-t-lg lg:rounded-lg z-10 " /> */}
-          {/* <span className="block md:float-center cursor-pointer font-bold text-4xl text-white ml-20 mt-10">Hestamannafélagið Þjálfi</span> */}
           <Link href="/">
             <span className="justify-center cursor-pointer  font-bold text-5xl text-white">Þjálfi</span>
           </Link>
