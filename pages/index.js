@@ -1,5 +1,5 @@
 import { FeaturedPosts } from '../sections/index';
-import { PostCard, Categories, PostWidget, Footer } from '../components';
+import { PostCard, Categories, PostWidget, SocialMedia, Support, Footer } from '../components';
 import { getPosts } from '../services';
 
 export default function Home({ posts }) {
@@ -16,10 +16,12 @@ export default function Home({ posts }) {
           <div className="lg:sticky relative top-8">
             <PostWidget />
             <Categories />
-            <Footer />
+            <SocialMedia />
+            <Support />
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

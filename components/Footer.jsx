@@ -1,58 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 
-import Link from 'next/link';
-
-const Footer = () => {
-  const something = 0;
-  console.log(something);
-  return (
-
-    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-4 font-semibold border-b pb-4">Tenglar</h3>
-      <Link href="https://www.facebook.com">
-        <span className="cursor-pointer block border-b pb-3 mb-3 text-sky-700">
-          FACEBOOK
-        </span>
-      </Link>
-      <Link href="https://www.instagram.com">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          INSTAGRAM
-        </span>
-      </Link>
-      <Link href="https://www.lhhestar.is/">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          Landssamband Hestamannafélaga
-        </span>
-      </Link>
-      <h3 className="text-xl mb-4 font-semibold border-b pb-4 mt-4 pt-4">Styrktaraðilar</h3>
-      <Link href="https://www.samherji.is">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          Samherji
-        </span>
-      </Link>
-      <Link href="https://www.lifland.is">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          Lífland
-        </span>
-      </Link>
-      <Link href="https://www.landsvirkjun.is">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          Landsvirkjun
-        </span>
-      </Link>
-      <Link href="/">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          R&M ehf.
-        </span>
-      </Link>
-      <Link href="https://www.https://steinsteypir.is/">
-        <span className="cursor-pointer block border-b pb-3 mb-3">
-          Steinsteypir ehf.
-        </span>
-      </Link>
+const Footer = () => (
+  <div className="text-center mt-20 mb-8 p-12 relative rounded-lg bg-black bg-opacity-20">
+    <div className="absolute left-0 right-0 -top-14">
+      <Image
+        unoptimized
+        alt="Þjálfi"
+        height="100px"
+        width="100px"
+        className="align-middle rounded-full"
+        src="../logo.jpg"
+      />
     </div>
-
-  );
-};
+    <h3 className="text-white mt-4 mb-4 text-4xl font-bold">Hestamannafélagið Þjálfi 2022</h3>
+    <p className="text-white text-xs">&copy; Reykweb</p>
+  </div>
+);
 
 export default Footer;
